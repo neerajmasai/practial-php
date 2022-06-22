@@ -35,7 +35,6 @@
             session_destroy();
 
             // after logout
-
             echo "<h4>SESSION DESTROYED. REFRESH PAGE.</h4>";
         }
 
