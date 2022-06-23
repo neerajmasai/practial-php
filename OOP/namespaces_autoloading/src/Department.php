@@ -1,5 +1,6 @@
 <?php
-    require('./src/Employee.php');
+    namespace LearningPHP;
+
     class Department{
         private $name;
         private $capacity;
@@ -13,7 +14,7 @@
         }
 
         public function add_staff(Employee $emp){
-            $this->staff = $emp;
+            array_push($this->staff, $emp);
             $this->capacity++;
         }
 
